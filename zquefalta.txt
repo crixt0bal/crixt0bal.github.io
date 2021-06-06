@@ -1,0 +1,4 @@
+minificar css, javascript y optimizar
+sacar fotos funeraria, modificar los lorem ipsum y poner los alt
+empezar a pensa con que bd ocuparemos y que backend ocuparemos(creo que python-django)
+

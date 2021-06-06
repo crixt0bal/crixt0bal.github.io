@@ -1,0 +1,320 @@
+body{
+    background: url(../img/bg.jpg);
+}
+
+.titulos{
+    font-family: 'Great Vibes', cursive;
+    color: #018531;
+}
+
+.bg-principal{
+    background-color: #018531;
+    background-image: linear-gradient( #018531, #006124);
+}
+
+.parrafos{
+    font-family: 'Cabin', sans-serif;
+}
+
+/* EMAIL Y TELEFONO */
+.header-contact{
+    height: 25px;
+    font-size: 15px;   
+}
+/* TERMINO EMAIL Y TELEFONO */
+
+/* NAV */
+.navbar{
+    background-color: #018531;
+    background-image: linear-gradient( #018531, #006124);
+} 
+
+.botones{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;   
+}
+
+.botones:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #ffffff;
+    transition: width .3s;
+}
+
+.botones:hover::after{
+    width: 100%;
+    transition: width .3s; 
+} 
+
+.active a::after{
+    width: 100%;
+    transition: width .3s;
+} 
+
+/* TERMINO DEL NAV */
+
+/* NAVBAR TOGGLER ANIMATION*/
+.animated-icon2 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+    
+.animated-icon2 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+
+.animated-icon2 span {
+    background: #e3f2fd;  
+}
+
+.animated-icon2 span:nth-child(1) {
+    top: 0px; 
+}
+    
+.animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
+    top: 10px;  
+}
+    
+.animated-icon2 span:nth-child(4) {
+    top: 20px;
+}
+    
+.animated-icon2.open span:nth-child(1) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+}
+    
+.animated-icon2.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+    
+.animated-icon2.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+    
+.animated-icon2.open span:nth-child(4) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+}
+
+.navbar-toggler{
+    border: none;
+}
+/* TERMINO NAVBAR TOGGLER ANIMATION */
+
+/* SOLUCION AL DAR CLICK SE MOSTRABAN LOS BORDERS */
+button:focus{
+    outline: none;
+}
+/* TERMINO SOLUCION AL DAR CLICK SE MOSTRABAN LOS BORDERS */
+
+
+/* GALERIA */
+
+.img-efectos{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.zoom {
+    transition: transform .2s; 
+}
+ 
+.zoom:hover {
+    transform: scale(1.05); 
+}
+/* TERMINO GALERÍA */
+
+/* BORDES EDITADOS*/
+.border-3 {
+    border-width:3px !important;
+}
+
+.border-5{   
+    border-width:5px !important;   
+}
+
+.border-bottom-3{
+    border-bottom-width: 3px !important;
+}
+
+.border-bottom{
+    border-bottom-width: 6px !important; 
+}
+/* TERMINO BORDES EDITADOS */
+
+/* CAROUSEL */
+.carousel-item{
+    height: 38rem;
+    background: #000;
+    color: #ffffff;
+    position: relative;   
+}
+
+.container-carousel{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    /* bottom: 0; */
+    bottom: 30%;
+    left: 0;
+    /* right: 0; */
+    /* padding-bottom: 50px; */
+}
+
+@media (min-width: 576px){
+    .container-carousel{
+        max-width: 540px;
+    }   
+}
+
+.overlay-image{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+
+}
+/* TERMINO CAROUSEL */
+
+/* BOTONES-DE-ABAJO */
+.btn-radius {
+    border-radius: 100px !important;
+}
+
+.btn {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	border-radius: 2px;
+    padding: 13px 28px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.14);
+    text-transform: uppercase;
+    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-sm {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 11px 25px;	
+}
+.btn-lg {
+    padding: 18px 49px;
+}
+.btn-xs {
+	font-size: 10px;
+	padding: 8px 14px;
+}
+
+.btn-success{
+    background: #018531, #006124;
+    background: -moz-linear-gradient(-45deg, #018531 0%, #238848  50%, #006124 51%, #018531 71%, #018531 100%);
+    background: -webkit-linear-gradient(-45deg, #018531 0%,#238848  50%,#006124 51%,#018531 71%,#018531 100%);
+    background: linear-gradient(135deg, #018531 0%,#238848 50%,#006124 51%,#018531 71%,#018531 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#018531', endColorstr='#018531',GradientType=1 );
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+    border: medium none; 
+}
+
+@-webkit-keyframes AnimationName {
+    0%{
+        background-position:0% 31%
+    }
+    50%{
+        background-position:100% 70%
+    }
+    100%{
+        background-position:0% 31%
+    }
+}
+@-moz-keyframes AnimationName {
+    0%{
+        background-position:0% 31%
+    }
+    50%{
+        background-position:100% 70%
+    }
+    100%{
+        background-position:0% 31%
+    }
+}
+@keyframes AnimationName {
+    0%{
+        background-position:0% 31%
+    }
+    50%{
+        background-position:100% 70%
+    }
+    100%{
+        background-position:0% 31%
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
