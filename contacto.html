@@ -98,90 +98,89 @@
 
                 <!--Grid column-->
                 <div class="col-md-9 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                  <form action="" method="POST" onsubmit="return validaciones()">
 
-                        <!--Grid row-->
-                        <div class="row">
+                    <!--Grid row-->
+                    <div class="row">
 
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <label for="name" class="mb-0 " style="font-family: 'Cabin', sans-serif;">Nombre*</label>
-                                    <input type="text" id="name" name="name" class="form-control" placeholder="Nombre">
-                                    
-                                </div>
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <label for="name" class="mb-0 mt-2" style="font-family: 'Cabin', sans-serif;">Nombre*</label>
+                                <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Nombre" required>
+                                
                             </div>
-                            <!--Grid column-->
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                              <div class="md-form mb-0">
-                                  <label for="lastname" class="mb-0" style="font-family: 'Cabin', sans-serif;">Apellido*</label>
-                                  <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Apellido">
-                                  
-                              </div>
-                            </div>
-                          <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-md-12">
-                                <div class="md-form mb-0">
-                                    <label for="empresa" class="mb-0 mt-2" style="font-family: 'Cabin', sans-serif;">Empresa</label>
-                                    <input type="text" id="empresa" name="empresa" class="form-control" placeholder="Empresa">
-                                    
-                                </div>
-                            </div>
-                            <!--Grid column-->
-
                         </div>
-                        <!--Grid row-->
-                        <!--Grid row-->
-                        <div class="row">
-                          <div class="col-md-12">
-                              <div class="md-form mb-0">
-                                  <label for="email" class="mb-0 mt-2" style="font-family: 'Cabin', sans-serif;">Email*</label>
-                                  <input type="text" id="email" name="email" class="form-control" placeholder="ejemplo@email.com">
-                                  
-                              </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                          <div class="md-form mb-0">
+                              <label for="lastname" class="mb-0 mt-2" style="font-family: 'Cabin', sans-serif;">Apellido*</label>
+                              <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Apellido" required>
+                              
                           </div>
                         </div>
-                      <!--Grid row-->
+                      <!--Grid column-->
 
-                        <!--Grid row-->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form mb-0">
-                                    <label for="numero" class="mb-0 mt-2" style="font-family: 'Cabin', sans-serif;">Teléfono*</label>
-                                    <input type="text" id="numero" name="numero" class="form-control" placeholder="9 12345678">
-                                    
-                                </div>
+                        <!--Grid column-->
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <label for="empresa" class="mb-0 mt-2" style="font-family: 'Cabin', sans-serif;">Empresa</label>
+                                <input type="text" id="empresa" name="empresa" class="form-control" placeholder="Empresa" >
+                                
                             </div>
                         </div>
-                        <!--Grid row-->
+                        <!--Grid column-->
 
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-12">
-
-                                <div class="md-form">
-                                    <label for="message" class="mb-0 mt-2" style="font-family: 'Cabin', sans-serif;">Mensaje*</label>
-                                    <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea" placeholder="Mensaje"></textarea>
-                                    <label for="" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">(Etiquetas marcadas con * son campos obligatorios)</label>
-                                    
-                                    
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                    </form>
-
-                    <div class="text-center text-md-left mt-2">
-                        <a class="btn btn-success" onclick="document.getElementById('contact-form').submit();">ENVIAR</a>
                     </div>
-                    <div class="status"></div>
+                    <!--Grid row-->
+                    <!--Grid row-->
+                    <div class="row">
+                      <div class="col-md-12">
+                          <div class="md-form mb-0">
+                              <label for="email" class="mb-0 mt-2" style="font-family: 'Cabin', sans-serif;">Email*</label>
+                              <input type="text" id="email" name="email" class="form-control" placeholder="ejemplo@email.com" required>
+                              
+                          </div>
+                      </div>
+                    </div>
+                  <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <label for="numero" class="mb-0 mt-2" style="font-family: 'Cabin', sans-serif;">Teléfono*</label>
+                                <input type="text" id="number" name="number" class="form-control" placeholder="9 12345678" required>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-12">
+
+                            <div class="md-form">
+                                <label for="message" class="mb-0 mt-2" style="font-family: 'Cabin', sans-serif;">Mensaje*</label>
+                                <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea" placeholder="Mensaje" required></textarea>
+                                <label for="" style="color:red; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">(Etiquetas marcadas con * son campos obligatorios)</label>
+                                
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                      <input type="submit" class="btn btn-success text-center text-md-left mt-2" name="ENVIAR" placeholder="ENVIAR">
+                    
+
+                  </form>
+
+                    
                 </div>
                 <!--Grid column-->
 
@@ -339,6 +338,8 @@
           
           
         <!-- LINKS JAVASCRIPT -->
+        <!-- Enlace validaciones -->
+        <script src="javascript/validaciones.js"></script>
         <!-- Enlace de Hamburger -->
         <script src="javascript/navbartoggler.js"></script>
         <!-- AOS -->
