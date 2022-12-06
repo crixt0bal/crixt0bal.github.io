@@ -483,6 +483,8 @@ body.dark-theme{
   .profile__perfil img{
     width: 120px;
   }
+
+  
 }
 
 /* md */
@@ -500,7 +502,11 @@ body.dark-theme{
   .profile__perfil img{
     width: 120px;
   }
+
+  
 }
+
+
 
 @media screen and (min-width: 776px){
   .projects__content,
@@ -516,6 +522,8 @@ body.dark-theme{
     justify-content: center;
     column-gap: 3rem;
   }
+
+  
 }
 
 /* lg */
@@ -581,5 +589,12 @@ body.dark-theme{
 
   .footer__copy{
     margin: 4.5rem 0 2.5rem;
+  }
+}
+
+
+@media screen and (max-width: 576px){
+  .projects__modal{
+    bottom: 0;
   }
 }
