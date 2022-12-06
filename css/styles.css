@@ -1,14 +1,13 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+
 :root {
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   /*
-      Blue: hsl(207, 90%, 61%)
-      Purple: hsl(250, 66%, 75%)
-      Pink: hsl(356, 66%, 75%)
+      Azul: hsl(207, 90%, 61%)
+      Morado: hsl(250, 66%, 75%)
+      Rosa: hsl(356, 66%, 75%)
       Teal: hsl(174, 63%, 62%)
   */
 
@@ -24,8 +23,7 @@
   --body-color: hsl(var(--hue), 100%, 99%);
   --container-color: #fff;
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+  
   --body-font: 'Poppins', sans-serif;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -56,7 +54,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .3s; /* For animation dark mode */
+  transition: .3s; /* animacion dark mode */
 }
 
 h1, h2, h3 {
@@ -93,7 +91,7 @@ img {
 
 }
 
-/*========== Variables Dark theme ==========*/
+/* Variables Dark theme  */
 body.dark-theme{
   --title-color: hsl(var(--hue), 12%, 95%);
   --text-color: hsl(var(--hue), 12%, 75%);
@@ -102,10 +100,7 @@ body.dark-theme{
 
 }
 
-/*========== 
-    Color changes in some parts of 
-    the website, in light theme
-==========*/
+/* CAMBIAR COLOR EN ALGUNAS PARTES */
 .dark-theme .button__gray{
   background-color: var(--container-color);
 }
@@ -130,7 +125,7 @@ body.dark-theme{
   background-color: hsl(var(--hue), 8%, 32%);
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/*=============== CONTAINER ===============*/
 .container {
   max-width: 968px;
   margin-left: 1.5rem;
@@ -142,7 +137,7 @@ body.dark-theme{
   gap: 1.5rem;
 }
 
-/*=============== PROFILE ===============*/
+/*=============== PERFIL ===============*/
 .profile{
   position: relative;
   padding-top: 3.5rem;
@@ -257,7 +252,7 @@ body.dark-theme{
   column-gap: .25rem;
 }
 
-/*=============== BUTTONS ===============*/
+/*=============== BUTTON ===============*/
 .button{
   display: inline-flex;
   align-items: center;
@@ -421,7 +416,7 @@ body.dark-theme{
   font-size: var(--smaller-font-size);
 }
 
-/* Hide and show projects & skills */
+
 .filters [data-content]{
   display: none;
 }
@@ -430,7 +425,7 @@ body.dark-theme{
   display: grid;
 }
 
-/* Activate button filter */
+
 .filter-tab-active{
   background-color: var(--body-color);
 }
@@ -444,7 +439,7 @@ body.dark-theme{
   color: var(--text-color-light);
 }
 
-/*=============== SCROLL BAR ===============*/
+/*=============== SCROLL ===============*/
 ::-webkit-scrollbar{
   width: .6rem;
   border-radius: .5rem;
@@ -463,8 +458,8 @@ body.dark-theme{
   background-color: hsl(var(--hue), 8%, 44%);
   
 }
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
+
+/* sm */
 @media screen and (max-width: 320px) {
   .container{
     margin-left: 1rem;
@@ -490,7 +485,7 @@ body.dark-theme{
   }
 }
 
-/* For medium devices */
+/* md */
 @media screen and (min-width: 576px) {
   .projects__content{
     grid-template-columns: 332px;
@@ -523,7 +518,7 @@ body.dark-theme{
   }
 }
 
-/* For large devices */
+/* lg */
 @media screen and (min-width: 992px) {
   .container{
     margin-left: auto;
